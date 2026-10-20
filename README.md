@@ -44,36 +44,7 @@ The project uses four CSV files, placed in the `data/` folder:
 | `department.csv` | Department ID and name |
 | `job_roles.csv` | Role ID and position title |
 
-The data contains no missing values, and every employee in `emp_info` has a matching record in `emp_salary`.
 
-> **Privacy note:** The data includes birth dates, marital status, city, and salary information. The `data/` folder is excluded from version control through `.gitignore`. Do not commit real employee data to a public repository.
-
-## Requirements
-
-- Python 3.9 or later
-- pandas
-- numpy
-
-Install the Python dependencies:
-
-```bash
-pip install pandas numpy
-```
-
-Power BI Desktop is required to open the `.pbix` file.
-
-## Running the Python Dashboard
-
-1. Place the four CSV files in the `data/` folder.
-2. Run the build script from the project root:
-
-```bash
-   python python/build.py
-```
-
-3. Open `output/hr_dashboard.html` in any modern browser. Chart.js loads from a CDN, so an internet connection is needed the first time.
-
-The script prints the number of charts per page and the KPI values, which you can use to verify the output.
 
 ## Power BI Report
 
